@@ -2,14 +2,13 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Program1 {
-
     public static void main(String args[])
     {
-
         Scanner scanner=new Scanner(System.in);
 
         System.out.println("Please enter the number of rows");
         int rowSize=scanner.nextInt();
+
         int arr[][]= new int[rowSize][];
 
         for(int i=0;i<rowSize;i++)
@@ -31,7 +30,7 @@ public class Program1 {
             System.out.println(Arrays.toString(arr[i]));
         }
 
-        int sum=0;
+      int sum=0;
         for(int i=0;i< arr.length;i++)
         {
             for(int j=0;j<arr[i].length;j++)
