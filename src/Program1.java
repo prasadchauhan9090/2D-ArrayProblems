@@ -25,10 +25,25 @@ public class Program1 {
             }
         }
 
+        System.out.println("INPUT: ");
         for(int i=0;i<rowSize;i++)
         {
             System.out.println(Arrays.toString(arr[i]));
         }
+
+        int sum=0;
+        for(int i=0;i< arr.length;i++)
+        {
+            for(int j=0;j<arr[i].length;j++)
+            {
+                sum=sum+arr[i][j];
+            }
+        }
+
+        System.out.println(sum);
+
+
+
 
 
 
