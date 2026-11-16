@@ -3,8 +3,19 @@ import java.util.Scanner;
 
 public class Program2 {
 
+    public int Demo(int a) {
+
+        System.out.println("PROGRAM2 FOR PRACTICE 2D ARRAY");
+
+        return a;
+    }
+
     public static void main(String args[]) {
         Scanner scanner = new Scanner(System.in);
+
+        Program2 program = new Program2();
+
+        program.Demo(5);
 
         System.out.println("Please  enter the number of rows in row 1");
         int rowSize_arr1 = scanner.nextInt();
@@ -15,6 +26,8 @@ public class Program2 {
             System.out.println("Please column size in the row number" + i);
             int columnSize = scanner.nextInt();
             arr1[i] = new int[columnSize];
+
+
 
             System.out.println("Please enter the column number" + i);
             for (int j = 0; j < columnSize; j++) {
